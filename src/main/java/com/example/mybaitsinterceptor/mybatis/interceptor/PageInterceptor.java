@@ -37,6 +37,7 @@ public class PageInterceptor implements Interceptor {
         return invocation.proceed();
     }
 
+
     @Override
     public Object plugin(Object o) {
         return Plugin.wrap(o, this);
