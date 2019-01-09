@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+        url: jdbc:mysql://localhost:3306/lwb?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true
+        username: root
+        password: 123456
+        initial-size: 10
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+logging:
+  level:
+    com: debug
+    org.mybatis: debug
+
