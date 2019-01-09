@@ -16,5 +16,5 @@ public interface StudentDao {
 
     void add(Student student);
 
-    Object pageList(Pageable pageable);
+    List<Object> pageList(Pageable pageable);
 }
